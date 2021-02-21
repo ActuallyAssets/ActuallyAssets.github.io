@@ -34,8 +34,8 @@ class ApiResponse {
     }
 
     static getApiResponse(texturepack, reponseHandler) {
-        //let url = "https://api.github.com/repos/ActuallyAssets/" + texturepack + "/releases";
-        let url = "mockresponse." + texturepack + ".json";
+        let url = "https://api.github.com/repos/ActuallyAssets/" + texturepack + "/releases";
+        //let url = "mockresponse." + texturepack + ".json";
         fetch(url)
         .then(response => {
             response.text().then(text => {
